@@ -33,4 +33,5 @@ No appenders could be found for logger (org.springframework.test.context.junit4.
 	log4j.appender.stdout.Target=System.out
 	log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
 	log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n	
-
+	
+	且同时增加slf4j和log4j不会导致报错
