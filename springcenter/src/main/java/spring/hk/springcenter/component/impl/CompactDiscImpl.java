@@ -1,5 +1,7 @@
 package spring.hk.springcenter.component.impl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import spring.hk.springcenter.component.CompactDisc;
@@ -11,11 +13,11 @@ import spring.hk.springcenter.component.CompactDisc;
 @Component
 public class CompactDiscImpl implements CompactDisc
 {
-
+	private Logger logger = LoggerFactory.getLogger(CompactDiscImpl.class);
     @Override
     public void play()
     {
-        System.out.println("Play...");
+    	logger.info("Start to play");
     }
 
 }
