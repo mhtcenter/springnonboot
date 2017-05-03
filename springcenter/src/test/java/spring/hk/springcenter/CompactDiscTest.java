@@ -23,6 +23,7 @@ public class CompactDiscTest {
 	
 	@Test
 	public void dcShouldNotNull(){
+		dc.play();
 		assertNotNull(dc);
 	}
 }
